@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.course-name::after {
+  content: "";
+  height: 4px;
+  width: 60px;
+  background-color: #e63946;
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+}
+
+.heading::after {
+  content: "";
+  height: 4px;
+  width: 80px;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+}
+
+.custom-list-item {
+  position: relative;
+  padding-left: 1.5em; /* Adjust as needed */
+}
+
+.custom-list-item::before {
+  content: "•"; /* Use a bullet character or any other symbol */
+  position: absolute;
+  left: 0;
+  color: #ffdd00; /* Color for the disc, change as needed */
+}
+
+.topic_list::before {
+  content: "";
+  position: absolute;
+  left: -24px;
+  width: 8px;
+  height: 8px;
+  background-color: #e63946;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+h2 {
+  line-height: 48px; /* Adjust as needed */
+}

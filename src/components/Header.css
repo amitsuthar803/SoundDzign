@@ -1,0 +1,9 @@
+.course-name::after {
+  content: "";
+  height: 4px;
+  width: 60px;
+  background-color: #e63946;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+}
