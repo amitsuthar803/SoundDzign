@@ -15,15 +15,15 @@ function Topics() {
   const [currentImage, setCurrentImage] = useState(studio);
 
   return (
-    <section className="bg-black py-[80px]">
-      <Wrapper className="wrapper relative mb-[33px]">
+    <section id="topics" className="bg-black py-[80px] phone:py-[60px]">
+      <Wrapper className="wrapper relative mb-[33px] phone:mb-[21px] tablet:mb-[30px]">
         {/* reusable heading */}
         <Heading className=" after:bg-primary-red">
           What will you learn?
         </Heading>
         {/* container */}
-        <div className="flex justify-between items-center mt-[35px]">
-          <ul className="flex   font-fontsecondary flex-col gap-6 m-0 p-0 ml-[36px] mt-[9px] ">
+        <div className="flex   justify-between items-center phone:mt-[24px] mt-[33px]">
+          <ul className="flex   font-fontsecondary tablet:mt-[8px] flex-col gap-6 m-0 p-0 ml-[36px] mt-[9px] ">
             <li
               onMouseEnter={() => setCurrentImage(call)}
               className="relative topic_list text-xl font-normal  leading-[27.33px] text-white"
@@ -62,9 +62,9 @@ function Topics() {
             </li>
           </ul>
           {/* img box */}
-          <div className="mt-[1px]">
+          <div className="mt-[1px] tablet:mt-[11px] phone:hidden ">
             <img
-              className=" object-cover max-w-[558px]"
+              className=" object-cover max-w-[558px] tablet:w-[385px] tablet:h-[287px]"
               src={currentImage}
               alt=""
             />
@@ -72,7 +72,7 @@ function Topics() {
         </div>
         <img
           src={yellowBorder}
-          className="absolute bottom-[-30px] right-[-30px]"
+          className="absolute bottom-[-33px] right-[-30px] tablet:bottom-[-30px] phone:right-[32px] phone:bottom-[-23px] tablet:right-[-26px]"
           alt=""
         />
       </Wrapper>

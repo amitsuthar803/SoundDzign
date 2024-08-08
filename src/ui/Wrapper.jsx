@@ -1,8 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function  Wrapper({ children, className }) {
-  return <div className={`${className} max-w-[1024px] m-auto`}>{children}</div>;
+function Wrapper({ children, className }) {
+  return (
+    <div
+      className={`${className} max-w-[1024px]  phone:px-[32px] tablet:max-w-[694px] m-auto`}
+    >
+      {children}
+    </div>
+  );
 }
 
 export default Wrapper;

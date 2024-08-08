@@ -14,6 +14,32 @@ export default {
       fontFamily: {
         fontsecondary: ["Alegreya", "sans-serif"],
       },
+      screens: {
+        tablet: { max: "1040px" },
+        phone: { max: "640px" },
+      },
+
+      // sm: 640px and up (small screens like mobile phones)
+      // md: 768px and up (tablets and small laptops)
+      // lg: 1024px and up (larger laptops and desktops)
+      // xl: 1280px and up (large desktops)
+      // 2xl: 1536px and up (extra-large screens)
+      // screens: {
+      //   'md-max-lg': { 'min': '768px', 'max': '1023px' }, // Custom breakpoint between md and lg
+      // },
+
+      // Extra Small (xs): < 640px
+      // Small (sm): ≥ 640px
+      // Medium (md): ≥ 768px
+      // Large (lg): ≥ 1024px
+      // Extra Large (xl): ≥ 1280px
+      // 2 Extra Large (2xl): ≥ 1536px
+
+      // Custom breakpoints
+      //   'sm-max': { 'max': '639px' },   // Custom breakpoint for screens smaller than 640px
+      //   'md-max': { 'max': '767px' },   // Custom breakpoint for screens between 640px and 768px
+      //   'lg-max': { 'max': '1023px' },  // Custom breakpoint for screens between 768px and 1024px
+      // },
 
       // fontSize: {
       //   "heading-1": ["2.5rem", { lineHeight: "2.5rem" }], // Equivalent to text-4xl

@@ -21,6 +21,7 @@ import studioMini from "./studiomini.png";
 import twitter from "./Twitter.svg";
 import videoIcon from "./video.svg";
 import yellowBorder from "./yellowborder.svg";
+import audienceMax from "./audienceMax.png";
 
 export {
   audienceMini,
@@ -46,4 +47,5 @@ export {
   twitter,
   videoIcon,
   yellowBorder,
+  audienceMax,
 };

@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -38,18 +42,7 @@ a {
   bottom: -4px;
 }
 
-.custom-list-item {
-  position: relative;
-  padding-left: 1.5em; /* Adjust as needed */
-}
-
-.custom-list-item::before {
-  content: "•"; /* Use a bullet character or any other symbol */
-  position: absolute;
-  left: 0;
-  color: #ffdd00; /* Color for the disc, change as needed */
-}
-
+/* bullet point */
 .topic_list::before {
   content: "";
   position: absolute;
@@ -64,4 +57,14 @@ a {
 
 h2 {
   line-height: 48px; /* Adjust as needed */
+}
+
+@media (max-width: 1040px) {
+}
+
+/* smartphone */
+@media (max-width: 720px) {
+  .heading::after {
+    width: 50px;
+  }
 }
