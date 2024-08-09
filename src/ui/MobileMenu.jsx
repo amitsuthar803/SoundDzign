@@ -4,8 +4,11 @@ import { close } from "../assets/index";
 function MobileMenu({ classname, showMenu, setShowMenu }) {
   return (
     <div className={` ${classname}  ${showMenu ? "top-0" : "top-[-282px]"} `}>
-      <div onClick={() => setShowMenu(false)} className=" cursor-pointer">
-        <img className="fixed right-[56px] top-[44px]" src={close} alt="" />
+      <div
+        onClick={() => setShowMenu(false)}
+        className=" cursor-pointer absolute   right-[65px] top-[44px]"
+      >
+        <img className="" src={close} alt="" />
       </div>
       <ul className="flex flex-col gap-[30px]  list-none p-0">
         <li className=" leading-[19px]">

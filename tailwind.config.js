@@ -17,6 +17,7 @@ export default {
       screens: {
         tablet: { max: "1040px" },
         phone: { max: "640px" },
+        smallphone: { max: "315px" },
       },
 
       // sm: 640px and up (small screens like mobile phones)
