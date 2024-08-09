@@ -1,4 +1,3 @@
-import React from "react";
 import Wrapper from "../ui/Wrapper";
 import { hero } from "../assets";
 
@@ -12,7 +11,7 @@ function Header() {
       style={{ backgroundImage: `url(${hero})` }}
     >
       <Wrapper className="wrapper relative h-dvh ">
-        <Navbar />
+        <Navbar  />
         <div className="absolute bottom-0 bg-[rgba(0,0,0,0.5)] rounded-t-[20px]  tablet:w-[356px] right-0 phone:w-auto phone:right-[32px] phone:h-[281px] phone:left-[32px] w-[453px] h-[326px]  phone:pt-[41px]  pt-[46px] smallphone:left-[16px] smallphone:right-[16px] border-white border-t-4 border-r-4  border-l-4 px-[40px] backdrop-blur-[25px] ">
           <p className="course-name relative text-white  phone:mb-[25px] mb-[35px] text-[1rem] capitalize font-extrabold leading-[19px]">
             Sound Design Masterclass

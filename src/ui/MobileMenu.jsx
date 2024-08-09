@@ -3,7 +3,11 @@ import { close } from "../assets/index";
 
 function MobileMenu({ classname, showMenu, setShowMenu }) {
   return (
-    <div className={` ${classname}  ${showMenu ? "top-0" : "top-[-282px]"} `}>
+    <div
+      className={` ${classname}  ${
+        showMenu ? "translate-y-0" : "translate-y-[-100%]"
+      } `}
+    >
       <div
         onClick={() => setShowMenu(false)}
         className=" cursor-pointer absolute   right-[65px] top-[44px]"
