@@ -79,7 +79,7 @@ function Navbar() {
         showMenu={showMenu}
         setShowMenu={setShowMenu}
         classname=" hidden phone:block   px-[32px]  bg-primary-dark z-50 text-white left-0 right-0 w-full fixed
-         duration-300 ease-in-out py-[58px] max-h-[282px]
+        py-[58px] max-h-[282px]
         "
       />
     </>
