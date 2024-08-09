@@ -5,7 +5,14 @@ import { facebook, twitter, instagram } from "../assets/index";
 function Footer() {
   return (
     <footer className="bg-black py-[50px] phone:py-[48px]">
-      <Wrapper>
+      <Wrapper
+        initial="hidden"
+        whileInView="show"
+        position="right"
+        delay={0.2}
+        once={false}
+        amount={0.2}
+      >
         {/* content container */}
         <div className="flex justify-between phone:flex-col phone:gap-[40px]">
           {/* 1 */}

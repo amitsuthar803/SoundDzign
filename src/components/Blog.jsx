@@ -7,14 +7,25 @@ import {
   audienceMini,
   audienceMax,
 } from "../assets/index";
+import { motion } from "framer-motion";
 
 function Blog() {
   return (
-    <section id="blog" className=" bg-primary-pink phone:py-[60px]  py-[80px]">
-      <Wrapper>
+    <section
+      id="blog"
+      className=" bg-primary-pink phone:py-[60px] overflow-hidden  py-[80px]"
+    >
+      <Wrapper
+        initial="hidden"
+        whileInView="show"
+        position="up"
+        delay={0.2}
+        once={false}
+        amount={0.2}
+      >
         <Heading className=" after:bg-primary-yellow">Latest Posts</Heading>
         {/* content container */}
-        <div className="grid grid-cols-3 phone:grid-cols-1  tablet:grid-cols-2 tablet:gap-[30px]  gap-10 mt-[44px]">
+        <motion.div className="grid grid-cols-3 phone:grid-cols-1  tablet:grid-cols-2 tablet:gap-[30px]  gap-10 mt-[44px]">
           {/* 1 */}
           <div className="hover:scale-105  transition-all ease-in-out duration-300 bg-white rounded-[10px] relative overflow-hidden flex flex-col">
             <span className="absolute font-fontsecondary leading-[18px] px-[16px] font-bold  text-[13px] text-black rounded-[10px] bg-white right-[8px] top-[8px] ">
@@ -70,7 +81,7 @@ function Blog() {
               </h3>
             </a>
           </div>
-        </div>
+        </motion.div>
         {/* button Container*/}
         <div className="flex justify-end  mt-[30px]">
           <a

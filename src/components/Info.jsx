@@ -1,16 +1,24 @@
 import React from "react";
 import Wrapper from "../ui/Wrapper";
 import { videoIcon, studentIcon, redBorder } from "../assets/index";
+import { motion } from "framer-motion";
+import { fadeIn } from "../Varients";
 
 function Info() {
   return (
     <section
       id="info"
-      className=" bg-primary-dark pt-[80px] phone:pt-[60px] phone:pb-[29px] pb-[49px]  "
+      className=" bg-primary-dark pt-[80px] overflow-hidden  phone:pt-[60px] phone:pb-[29px] pb-[49px]  "
     >
       <Wrapper className="relative  ">
         {/* container */}
-        <div className="flex tablet:flex-col justify-center tablet:gap-[80px] gap-[280px] py-[31px] items-center text-white">
+        <motion.div
+          initial={"hidden"}
+          whileInView={"show"}
+          variants={fadeIn("up", 0.2)}
+          viewport={{ once: false, amount: 0.2 }}
+          className="flex tablet:flex-col justify-center tablet:gap-[80px] gap-[280px] py-[31px] items-center text-white"
+        >
           {/* info */}
           <div className="flex flex-col items-center justify-center tablet:mt-[-2px]">
             <img src={studentIcon} alt="" />
@@ -34,7 +42,7 @@ function Info() {
               Video Content
             </p>
           </div>
-        </div>
+        </motion.div>
 
         <img
           className="absolute left-[-18px] phone:left-[28px] tablet:left-5 top-0"

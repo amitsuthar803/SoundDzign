@@ -9,7 +9,14 @@ function Testimonials() {
       id="testimonials"
       className=" bg-primary-dark py-[80px] phone:py-[60px]"
     >
-      <Wrapper>
+      <Wrapper
+        initial="hidden"
+        whileInView="show"
+        position="right"
+        delay={0.2}
+        once={false}
+        amount={0.2}
+      >
         {/* heading */}
         <Heading className="after:bg-primary-red">
           What our students say?
